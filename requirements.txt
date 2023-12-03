@@ -1,0 +1,7 @@
+jaxlib
+jax
+equinox
+tqdm
+pandas
+matplotlib
+scikit-learn
