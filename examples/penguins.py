@@ -1,3 +1,34 @@
+# %% [markdown]
+# # Supervised Learning with Fuzzy Logic
+
+# ### Context
+
+# In this example, we leverage fuzzy logic for supervised learning in a classification task. 
+# The provided code snippet serves as an example for the integration of fuzzy logic within JAX to tackle explicit labeled data.
+
+# ### Fuzzy Logic in Action
+
+# The fuzzy system, at the heart of this application, processes inputs through fuzzy membership functions.
+# Domain logic is implemented using fuzzy AND, OR, and NOT operations, reflecting the imprecision and uncertainty often present in real-world decision-making.
+
+# ### De-Fuzzification and Optimization
+
+# A crucial step in the process is de-fuzzification, where the fuzzy output values are converted into probabilities. 
+# This output is then harnessed to optimize thresholds, fine-tuning the fuzzy logic system.
+
+# ### Training and Evaluation
+
+# The training process is no different from any other Equinox model. 
+# The provided classification report showcases the effectiveness of the fuzzy logic system in categorizing penguin species.
+
+# ### Model Interpretation
+
+# Visualizing the fuzzy parameters further enhances our understanding of the model. 
+# The fuzzy membership functions for various features, such as body mass, flipper length, and culmen depth, 
+# provide insights into how the model interprets and classifies different penguin species.
+
+
+
 # %%
 from itertools import chain
 import sys
@@ -11,7 +42,7 @@ from tqdm import tqdm
 import pandas as pd
 import matplotlib.pyplot as plt
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.dirname(__file__)+ '/../src')
 
 from jazzy import (
     fuzzy_not,

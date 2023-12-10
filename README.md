@@ -43,23 +43,6 @@ indics = jax.numpy.stack((is_adelie, is_chinstrap, is_gentoo))
 probas = indics / indics.sum()
 ```
 
-### Results After training
+### Examples
 
-After training the above logical circuit (tune the smoothness penalty with care), we obtain the following resutls:
-
-![Alt text](assets/loss.png)
-
-```
-              precision    recall  f1-score   support
-
-      Adelie       0.71      1.00      0.83        34
-   Chinstrap       1.00      0.27      0.42        15
-      Gentoo       0.96      0.86      0.91        28
-
-    accuracy                           0.81        77
-   macro avg       0.89      0.71      0.72        77
-weighted avg       0.86      0.81      0.78        77
-```
-
-![Alt text](assets/final-membership.png)
-
+Please explore the examples folder :)
